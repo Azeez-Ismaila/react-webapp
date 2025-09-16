@@ -1,0 +1,29 @@
+name: Build and Deploy React App to GitHub Pages
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if different
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Change to '16' if you decide to downgrade
+      - name: Install dependencies
+        run: |
+          yarn install
+          yarn upgrade caniuse-lite browserslist
+      - name: Build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+        run: yarn build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Directory where the build output is located
+          publish_branch: gh-pages  # Branch to deploy to
