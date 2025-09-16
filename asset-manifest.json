@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "//github.com/Azeez-Ismaila/react-webapp/static/css/main.f63f89b8.css",
+    "main.js": "//github.com/Azeez-Ismaila/react-webapp/static/js/main.4f7d5be4.js",
+    "static/media/logo.svg": "//github.com/Azeez-Ismaila/react-webapp/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "//github.com/Azeez-Ismaila/react-webapp/index.html",
+    "main.f63f89b8.css.map": "//github.com/Azeez-Ismaila/react-webapp/static/css/main.f63f89b8.css.map",
+    "main.4f7d5be4.js.map": "//github.com/Azeez-Ismaila/react-webapp/static/js/main.4f7d5be4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f63f89b8.css",
+    "static/js/main.4f7d5be4.js"
+  ]
+}
