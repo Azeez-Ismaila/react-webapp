@@ -16,6 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
+          yarn add gh-pages --dev
           yarn upgrade caniuse-lite browserslist
       - name: Build
         env:
